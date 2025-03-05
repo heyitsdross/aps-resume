@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: fago;
+  src: url("assets/font/FagoSans-4BaO9.otf") format("opentype");
+}
+
+span {
+  font-family: monospace;
+}
+
+a {
+  font-family: monospace;
+}
+
+
+.flag-emoji {
+  font-family: 'Twemoji Country Flags', 'Helvetica', serif;
+}
+
+html, body {
+  height: 100%;
+  padding: 5px 15px 5px 15px;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

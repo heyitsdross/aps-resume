@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Java Software Developer",
+    "company": "Kassenärztliche Vereinigung Baden-Württemberg",
+    "duration": {
+      "start": "2020-04-01",
+      "end": null,
+      "isCurrent": true
+    },
+    "projects": [
+      {
+        "name": "t3",
+        "description": "For technical reasons, testing KVBW-specific IT solutions against the third party document management system in use wasn't directly possible without causing data inconsistencies. As a result, an internal mock service was commissioned, against which internal projects could flexibly test a myriad of use cases, both manually and in CI builds. Personal tasks included creation and containerization of the application for use locally and in other projects' CI builds, custom security configuration, REST endpoint design and implementation, implementation of mock logic (including architecture design, data modelling), mentorship of other colleagues for internal development and typical industry best practices, heading review presentations to stakeholders, conception and suggestion of value additions. As of writing, the project is actively used in internal deployments.",
+        "duration": {
+          "start": "2023-01-01",
+          "end": null,
+          "isCurrent": true
+        },
+        "technologies": [
+          "java",
+          "spring",
+          "teamcity",
+          "bitbucket",
+          "angular",
+          "jira",
+          "openapi",
+          "wsl"
+        ]
+      },
+      {
+        "name": "D3-Adapter",
+        "description": "Due to a critical security issue, the document management system in use at the KVBW was forced into a sudden pivot from the old SOAP API into a new REST one. This in turn created breaking changes for all internal applications connecting to said service, demanding the creation of a backwards compatible adapter library to centrally handle the new REST calls and provide DTOs (Data Transfer Objects) for consumers. It was developed in tandem with the above mentioned t3 project, and as of time of writing is in use by multiple internal projects. Personal responsibilities included reverse engineering the new REST API to extract and define requirements, management of the deployment and publishing lifecycle of the library, cross-team communication with internal consumer projects to define feature enchancements and fix bugs, leading of refinement, and review scrum meetings, and writing of technical and usage documentation.",
+        "duration": {
+          "start": "2023-01-01",
+          "end": null,
+          "isCurrent": true
+        },
+        "technologies": []
+      },
+      {
+        "name": "Sitzungsverwaltung",
+        "description": "A recent initiative within the larger digitalisation movement occurring in German institutions led to an order for a switch within the Zulassungsausschuss (roughly: Committee for Approval of Doctors / Psychotherapists) from hand-written note blocks and letter-sent invites to a digital meeting management system to reduce planning complexity, paper usage, and overall efficiency. A containerized, near cloud-native web service was developed, offering the potential to select committee members to whose legal addresses invitation emails / letters would be sent, protocol and gather meeting points, decisions, and notes per protocollant within the legal requirements of the department, all of which would be merged into a final, legally binding record of the meeting for digital storage. The project was cancelled midway through development due to internal factors and lack of engagement from the department for whom the project was comissioned. Personal responsibilities included implementation and design of data models, REST Endpoints, UI components, as well as general SCRUM participation, bug fixes, leading project release cycles, presentation of features to stakeholders.",
+        "duration": {
+          "start": "",
+          "end": "",
+          "isCurrent": false
+        },
+        "technologies": [
+          "java",
+          "spring",
+          "teamcity",
+          "rancher",
+          "helm",
+          "bitbucket",
+          "angular",
+          "jira",
+          "openapi"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Software Developer / IT Consultant",
+    "company": "PRODYNA SE",
+    "duration": {
+      "start": "2018-04-01",
+      "end": "2019-12-01",
+      "isCurrent": false
+    },
+    "projects": []
+  },
+  {
+    "title": "Junior Java Developer",
+    "company": "M-Way Solutions GmbH",
+    "duration": {
+      "start": "2017-01-01",
+      "end": "2018-03-01",
+      "isCurrent": false
+    },
+    "projects": []
+  },
+  {
+    "title": "Junior Java Developer",
+    "company": "Promantis GmbH",
+    "duration": {
+      "start": "2016-09-01",
+      "end": "2016-12-01",
+      "isCurrent": false
+    },
+    "projects": []
+  }
+]

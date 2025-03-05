@@ -1,0 +1,47 @@
+.pos-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.project-meta-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.project-name {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.pos-project {
+  padding-top: 1rem;
+}
+
+.pos-title {
+  font-size: 1.2rem;
+}
+
+.project-info-container {
+  padding-bottom: 2rem;
+}
+
+.pos-info-left {
+  flex-grow: 1;
+}
+
+.project-description {
+  text-indent: 2rem;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+hr {
+  width: 80%;
+}
+
+div.project-info-container {
+  width: 90%;
+  text-indent: 1rem;
+}

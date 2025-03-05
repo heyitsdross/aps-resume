@@ -1,0 +1,74 @@
+li {
+  list-style-type: none;
+}
+
+mat-card-title {
+  padding-left: 5px;
+}
+
+.location-card-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.location-card {
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 250px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-card-nz {
+  background-image: url("../../assets/img/flag/nz-flag.svg");
+}
+
+.location-card-xx {
+  background-image: url("../../assets/img/flag/earth-flag.svg");
+  background-position: center center;
+}
+
+.background-opacity-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 0;
+}
+
+.location-card-title {
+  z-index: 1;
+}
+
+mat-card-content {
+  flex-grow: 1;
+}
+
+mat-card-footer {
+
+  padding-left: 5px;
+}
+
+.card-content {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.work-type-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-type-icon {
+  opacity: 1;
+  z-index: 1;
+  display: block;
+}

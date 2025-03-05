@@ -1,0 +1,18 @@
+[
+  {
+    "code": "nz",
+    "title": "New Zealand",
+    "styleClass": "location-card-nz",
+    "availability": true,
+    "reason": "Earliest move date: April 2025",
+    "locations": [
+      "Auckland",
+      "Wellington"
+    ],
+    "workTypes": [
+      "office",
+      "remote",
+      "hybrid"
+    ]
+  }
+]

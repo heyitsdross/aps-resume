@@ -1,0 +1,33 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.aps-header {
+  display: flex;
+  align-items: center;
+}
+
+.aps-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.slogan {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 0.9rem;
+  font-family: 'fago', 'arial', sans-serif;
+}
+
+.header-logo-img {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-family: 'fago', 'arial', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}

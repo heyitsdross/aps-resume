@@ -1,0 +1,35 @@
+<h3>Seeking Employment in:</h3>
+
+<div class="location-card-container" *ngFor="let location of availableLocations">
+    <mat-card class="location-card" [ngClass]="location.styleClass">
+        <div class="background-opacity-layer"></div>
+        <mat-card-title class="location-card-title">{{ location.title }}</mat-card-title>
+        <mat-card-content>
+            <div class="card-content">
+                <div>
+                    <span *ngIf="location.availability; else unavailable">✅ Available</span>
+                    <ng-template #unavailable><span>❌ Unavailable</span></ng-template>
+                </div>
+                <div *ngIf="location.locations">
+                    <span>Preferred Locations:</span>
+                    <li *ngFor="let loc of location.locations">
+                        <span>{{ loc }}</span>
+                    </li>
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-footer *ngIf="location.workTypes">
+            <div class="work-type-container">
+               <span *ngIf="location.workTypes.indexOf(WorkType.OFFICE) > -1" class="work-type-icon">
+                   <mat-icon matTooltip="In Office">work_outlined</mat-icon>
+               </span>
+                <span *ngIf="location.workTypes.indexOf(WorkType.REMOTE) > -1" class="work-type-icon">
+                   <mat-icon matTooltip="Remote" fontSet="material-symbols-outlined">captive_portal</mat-icon>
+               </span>
+                <span *ngIf="location.workTypes.indexOf(WorkType.HYBRID) > -1" class="work-type-icon">
+                   <mat-icon matTooltip="Hybrid" fontSet="material-symbols-outlined">home_pin</mat-icon>
+               </span>
+            </div>
+        </mat-card-footer>
+    </mat-card>
+</div>

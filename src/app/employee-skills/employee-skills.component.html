@@ -1,0 +1,15 @@
+<section>
+    <h2>Technologies</h2>
+
+    <div class="skill-container">
+        <span *ngFor="let skill of skillList"
+              class="skill-icon">
+            <img [ngSrc]="assetPath + skill.file"
+                 [alt]="skill.name"
+                 [title]="skill.name"
+                 width="48"
+                 height="48"
+                 priority/>
+        </span>
+    </div>
+</section>

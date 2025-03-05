@@ -1,0 +1,36 @@
+<h2>Employment History</h2>
+<div class="position" *ngFor="let position of jobPositions">
+    <div class="pos-info">
+        <div class="pos-info-left">
+            <span class="pos-title">{{ position.title }}</span>
+        </div>
+
+        <div>
+            <span>{{ position.duration.start | date }} </span>
+            <span *ngIf="position.duration.end"> - {{ position.duration.end | date }}</span>
+            <span *ngIf="position.duration.isCurrent"> - Current</span>
+        </div>
+    </div>
+
+    <div>
+        <span class="pos-company">{{ position.company }}</span>
+    </div>
+
+    <h4 *ngIf="position.projects.length > 0">Projects</h4>
+    <div class="project-info-container">
+        <div class="pos-project" *ngFor="let project of position.projects">
+            <div class="project-meta-info">
+                <div class="project-name">{{ project.name }}</div>
+                <div>
+                    <span>{{ project.duration.start | date }}</span>
+                    <span *ngIf="project.duration.end"> - {{ project.duration.end | date }}</span>
+                    <span *ngIf="project.duration.isCurrent"> - Current</span>
+                </div>
+            </div>
+
+            <p class="project-description">{{ project.description }}</p>
+        </div>
+    </div>
+
+
+</div>
