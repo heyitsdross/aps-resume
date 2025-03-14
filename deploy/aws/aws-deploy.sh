@@ -5,6 +5,10 @@
    exit 1
  fi
 
+docker build . -t aps-resume:"${APS_RESUME_VERSION}" \
+  --build-arg user="${USER}" \
+  --no-cache
+
 echo "Uploading image version ${APS_RESUME_VERSION}."
 
 aws lightsail push-container-image \
