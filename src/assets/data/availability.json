@@ -1,13 +1,14 @@
 [
   {
-    "code": "nz",
-    "title": "New Zealand",
-    "styleClass": "location-card-nz",
+    "code": "ie",
+    "title": "Ireland",
+    "styleClass": "location-card-ie",
     "availability": true,
-    "reason": "Earliest move date: April 2025",
+    "reason": "",
     "locations": [
-      "Auckland",
-      "Wellington"
+      "Limerick",
+      "Cork",
+      "Galway"
     ],
     "workTypes": [
       "office",
