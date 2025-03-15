@@ -1,19 +1,8 @@
 # ApsResume
 
-Personal resumé website meant to be served in a nginx docker container.
+Personal resumé website, built on Angular and hosted in an Nginx docker container.
 
-## Development server
+## Local Deployments
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To deploy locally, run the `deploy-localhost.sh` script from the project's root directory. `docker` must be installed. The following environment variable must be passed for the build to succeed: 
+1. `$CERT_FILE`: This SSL certificate file needs to be located in the `deploy` folder, and referenced only by its name (aka no directory drill down needed).

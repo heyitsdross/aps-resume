@@ -10,11 +10,11 @@ RUN npm run build
 
 FROM nginx:1.27-alpine
 
-ARG user
+ARG certfile
 
 COPY --from=builder /app/dist/aps-resume /usr/share/nginx/html
 
-COPY deploy/austinschaefer.com.cert /etc/nginx/austinschaefer.com.cert
+COPY deploy/$certfile /etc/nginx/host.cert
 COPY deploy/nginx/conf/nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 443

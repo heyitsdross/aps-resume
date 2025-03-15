@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker build -t aps-resume . \
-  --build-arg user="${USER}" \
+  --build-arg certfile="${CERT_FILE}" \
   && docker run \
   -v ./local/cert:/etc/nginx/ssl:ro \
   -v ./certbot/www/:/var/www/certbot/:ro \
