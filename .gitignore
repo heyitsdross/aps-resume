@@ -54,7 +54,8 @@ build/out
 # Opentofu / Terraform
 terraform.tfstate
 terraform.tfstate.backup
-secrets.tfvars
+terraform.tfstate.*.backup
+inf/secrets.auto.tfvars
 .terraform
 
 build
